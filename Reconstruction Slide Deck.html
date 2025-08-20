@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>From Bondage to Ballot Box – Reconstruction in South Carolina (5-Day Unit)</title>
+  <style>
+    :root{
+      --burgundy:#800020; /* primary */
+      --black:#000000;    /* secondary */
+      --ink:#121212;
+      --paper:#f7f7f7;
+      --accent:#b30a3c;   /* lighter burgundy tint for accents */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";color:var(--ink);background:#111}
+
+    /* Slide Deck Layout */
+    .deck{position:relative;height:100%;width:100%;overflow:hidden;background:linear-gradient(145deg,#0d0d0d 0%, #1a1a1a 100%);}    
+    .slide{position:absolute;inset:0;padding:64px 80px 88px 80px;display:none}
+    .slide.visible{display:block}
+    .card{height:100%;width:100%;border-radius:24px;background:var(--paper);box-shadow:0 10px 40px rgba(0,0,0,.35);display:grid;grid-template-rows:auto 1fr auto;overflow:hidden}
+    .head{display:flex;align-items:center;gap:16px;padding:18px 28px;background:linear-gradient(90deg,var(--burgundy), #4d0013);color:white}
+    .head .eyebrow{font-size:14px;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+    .head h1,.head h2{margin:0}
+    .head h1{font-size:30px;font-weight:800}
+    .head h2{font-size:26px;font-weight:800}
+
+    .content{padding:28px 34px 8px 34px;overflow:auto}
+    .content h3{margin:.2rem 0 .6rem 0;font-size:22px;color:var(--burgundy)}
+    .content p{line-height:1.4}
+    .content ul{margin:.2rem 0 .8rem 1.2rem}
+    .content li{margin:.28rem 0}
+    .content .muted{opacity:.85}
+    .badge{display:inline-block;background:var(--burgundy);color:#fff;border-radius:999px;padding:6px 10px;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #eee;border-radius:999px;padding:8px 12px;font-size:13px}
+
+    .foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee;padding:14px 24px;background:#fafafa}
+    .progress{display:flex;align-items:center;gap:10px}
+    .progressbar{--w:0%;width:260px;height:6px;background:#e8e8e8;border-radius:999px;overflow:hidden}
+    .progressbar>span{display:block;height:100%;width:var(--w);background:var(--burgundy)}
+    .nav{display:flex;gap:10px}
+    .nav button{background:var(--burgundy);color:#fff;border:0;border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}
+    .nav button.secondary{background:#1a1a1a}
+
+    /* Helpful callouts */
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .quote{border-left:5px solid var(--accent);padding:10px 14px;background:#fff}
+    .inline-note{font-size:13px;opacity:.85}
+    .lecture-text{font-size:15px;line-height:1.6}
+
+    /* Print all slides one-per-page */
+    @media print{
+      body{background:#fff}
+      .deck{background:#fff}
+      .slide{position:relative;display:block;page-break-after:always;padding:20px}
+      .card{box-shadow:none;border:1px solid #ddd}
+      .nav{display:none}
+      .progressbar{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="deck" id="deck" aria-live="polite">
+
+    <!-- ======================== UNIT OVERVIEW ======================== -->
+    <section class="slide visible" data-lesson="Unit" data-role="title">
+      <div class="card">
+        <header class="head">
+          <span class="eyebrow">U.S. History – Reconstruction in South Carolina</span>
+          <h1>From Bondage to Ballot Box</h1>
+        </header>
+        <div class="content">
+          <div class="grid-2">
+            <div>
+              <h3>Unit Purpose</h3>
+              <p>Explore how African Americans in South Carolina transformed politics, education, and community life during Reconstruction – and how violent resistance and federal retreat reshaped those gains.</p>
+              <ul>
+                <li>Center African American agency using diverse primary sources.</li>
+                <li>Practice historical thinking (sourcing, context, corroboration, close reading, significance).</li>
+                <li>Connect Reconstruction's legacy to today's civil rights issues.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Standards & Outcomes</h3>
+              <p class="muted">USHC.2.CX • USHC.2.CC • USHC.2.E</p>
+              <ul>
+                <li>Analyze 8+ primary sources from South Carolina during Reconstruction.</li>
+                <li>Build evidence-based arguments about federal protection of civil rights.</li>
+                <li>Explain the rise & fall of African American political power, 1865–1877.</li>
+              </ul>
+              <div class="inline-note">Primary sources include the 1868 S.C. Constitution debates, Freedmen's Bureau records, Klan hearings, Charlotte Forten Grimké's journals, and speeches by Robert Smalls.</div>
+            </div>
+          </div>
+        </div>
+        <footer class="foot">
+          <div class="progress"><div class="badge">Unit</div><div class="progressbar"><span></span></div><div id="counter">Slide 1 of N</div></div>
+          <div class="nav"><button class="secondary" id="prevBtn" aria-label="Previous slide">◀</button><button id="nextBtn" aria-label="Next slide">Next ▶</button></div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ======================== DAY 1 ======================== -->
+    <section class="slide" data-lesson="Day 1" data-role="title">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Day 1</span><h2>From Slavery to Freedom – The Promise of Reconstruction (1865–1867)</h2></header>
+        <div class="content">
+          <p class="muted">Essential Question: <strong>How did formerly enslaved people envision freedom, and what immediate challenges did they face?</strong></p>
+          <p><span class="pill">Focus</span> Freedmen's Bureau • Labor & family formation • First schools • Defining freedom</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary" aria-label="Previous slide">◀</button><button aria-label="Next slide">Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1" data-role="agenda">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Agenda</span><h2>Today's Plan</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Do Now:</strong> Photo analysis – freed family in South Carolina (1865).</li>
+            <li><strong>Direct Instruction:</strong> Immediate postwar S.C.; mission of the Freedmen's Bureau; how to analyze primary sources.</li>
+            <li><strong>Guided Practice:</strong> Source analysis in groups (marriage certificates, labor contract, wage letter, education circular).</li>
+            <li><strong>Student Activity:</strong> Jigsaw & build a class chart of <em>Freedpeople's Priorities</em>.</li>
+            <li><strong>Exit Ticket:</strong> Most important priority for newly freed people – cite evidence.</li>
+            <li><strong>Homework:</strong> Read Charlotte Forten Grimké, "Life on the Sea Islands" excerpt + guide.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Do Now</span><h2>What does freedom look like in 1865?</h2></header>
+        <div class="content">
+          <p>Observe the photo of a freed family in South Carolina (1865). Without inferring motives, list <strong>5 concrete details</strong> you notice. Then answer: <em>What clues hint at priorities after emancipation?</em></p>
+          <p class="inline-note">Teacher note: display image; give 3 minutes of silent observation, then 2-minute pair share.</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>Reconstruction Begins: Bureau, Labor, Family</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <p><strong>Context:</strong> When the Civil War ended in April 1865, South Carolina faced unprecedented transformation. Nearly 400,000 formerly enslaved people—about 60% of the state's population—suddenly gained freedom.</p>
+            
+            <h3>The Freedmen's Bureau</h3>
+            <ul>
+              <li>Established March 1865, led by General Oliver O. Howard</li>
+              <li>Only ~100 agents covering all of South Carolina</li>
+              <li>Mission: distribute food, negotiate labor contracts, establish schools, legitimize marriages</li>
+            </ul>
+            
+            <h3>Defining Freedom - Three Immediate Priorities:</h3>
+            <ul>
+              <li><strong>Family reunification:</strong> People walked hundreds of miles searching for sold-away family members. Bureau ads: "Sam Johnson seeks his wife Mary and children, last seen in Charleston 1862."</li>
+              <li><strong>Fair wages:</strong> After generations of unpaid labor, freedpeople demanded cash wages and written contracts</li>
+              <li><strong>Mobility:</strong> The ability to move freely became powerful—many left plantations simply to prove they could</li>
+            </ul>
+            
+            <p class="inline-note">Key point: The Bureau faced an impossible task with limited resources, trying to protect freedpeople's rights while maintaining agricultural production.</p>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>Black Codes & Labor Systems in S.C. (1865–1866)</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <h3>South Carolina's Black Codes (December 1865)</h3>
+            <ul>
+              <li><strong>Vagrancy laws:</strong> Any Black person without "lawful employment" could be arrested, fined, and hired out to pay the fine</li>
+              <li><strong>License requirements:</strong> Black artisans needed expensive licenses to practice trades</li>
+              <li><strong>Apprenticeship laws:</strong> Courts could bind Black children to white "masters" without parental consent</li>
+              <li><strong>Firearms prohibition:</strong> Black citizens couldn't own military-grade weapons</li>
+            </ul>
+            
+            <p><em>"The white people tell us we are free, but we see no difference yet."</em> - Freedman's testimony, 1866</p>
+            
+            <h3>Emergence of Sharecropping</h3>
+            <ul>
+              <li>Compromise between planters (land but no cash) and freedpeople (wanted autonomy but lacked capital)</li>
+              <li>System: Planters provide land/seed/tools; Workers provide labor; Crop split 50-50 or 60-40</li>
+              <li>Workers bought supplies on credit from plantation stores</li>
+              <li><strong>The trap:</strong> Debt accumulation meant a bad crop year could leave families owing more than earned, legally bound to work another year</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Primary Source Insight</span><h2>Labor Contract – Orangeburg District (1866)</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Terms:</strong> Monthly wages and rations; deductions for missed days; overseer authority spelled out.</li>
+            <li><strong>Control:</strong> Clauses limiting travel without a pass; penalties for "idleness."</li>
+            <li><strong>Signatures:</strong> Many workers signed with an <em>X</em>, witnessed by a Bureau agent.</li>
+            <li><strong>Takeaway:</strong> Contracts provided pay and recognition but preserved planter power.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Primary Source Insight</span><h2>Marriage Certificates & Family Reunification</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Legal family:</strong> Bureau-registered marriages turned long-standing unions into recognized families.</li>
+            <li><strong>Names:</strong> Couples formalized surnames; certificates often list children.</li>
+            <li><strong>Protection:</strong> Recognition helped secure wages, inheritance, and custody.</li>
+            <li><strong>Takeaway:</strong> Freedom meant <em>belonging</em> to a family under law.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Key Terms</span><h2>Build Vocabulary</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Freedmen's Bureau</strong> – Federal agency assisting formerly enslaved people with food, labor, education, and legal matters.</li>
+            <li><strong>Black Codes</strong> – State/local laws restricting Black freedom and labor options in 1865–66.</li>
+            <li><strong>Sharecropping</strong> – Labor system exchanging work for a portion of the crop rather than wages.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Guided Practice</span><h2>Source Labs (10 mins each)</h2></header>
+        <div class="content">
+          <div class="grid-2">
+            <div>
+              <h3>Packet A</h3>
+              <ul>
+                <li>Marriage certificates filed with the Bureau.</li>
+                <li>Labor contract – Orangeburg District, 1866.</li>
+                <li>Letter from <em>Lavinah Malby</em> re: unpaid wages.</li>
+                <li>Bureau circular on establishing schools.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tasks</h3>
+              <ul>
+                <li>Complete the analysis tool for your source.</li>
+                <li>Pull a <strong>direct quote</strong> that shows a priority (family, wages, education).</li>
+                <li>Prepare 1–2 sentences for the jigsaw share-out.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Student Activity</span><h2>Jigsaw: Freedpeople's Priorities</h2></header>
+        <div class="content">
+          <ul>
+            <li>Re-group and share your source's key insight (30–45 sec each).</li>
+            <li>Build a class chart of top priorities and the <em>evidence</em> for each.</li>
+            <li>Note any tensions (e.g., wages vs. debt; education vs. access).</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 1" data-role="exit">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Exit Ticket</span><h2>Most important priority?</h2></header>
+        <div class="content">
+          <p>Based on today's sources, what was the <strong>most important priority</strong> for newly freed people? Cite at least one specific piece of evidence.</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 1</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+
+    <!-- ======================== DAY 2 ======================== -->
+    <section class="slide" data-lesson="Day 2" data-role="title">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Day 2</span><h2>Political Revolution – African Americans Take Power (1867–1870)</h2></header>
+        <div class="content">
+          <p class="muted">Essential Question: <strong>How did African Americans participate in and shape South Carolina's new democracy?</strong></p>
+          <p><span class="pill">Focus</span> 1868 S.C. Constitutional Convention • Majority-Black representation • Robert Smalls, Joseph Rainey, Francis Cardozo</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2" data-role="agenda">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Agenda</span><h2>Today's Plan</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Do Now:</strong> 76 of 124 delegates at the 1868 Convention were African American – Why is this revolutionary?</li>
+            <li><strong>Direct Instruction:</strong> Political changes 1867–1870; key leaders and offices held.</li>
+            <li><strong>Guided Practice:</strong> Analyze Convention debate excerpts (education, universal male suffrage, civil rights).</li>
+            <li><strong>Student Activity:</strong> Mock Constitutional Convention – debate & vote.</li>
+            <li><strong>Exit Ticket:</strong> What surprised you most about Black political participation?</li>
+            <li><strong>Homework:</strong> Research an S.C. Black political leader for a brief share-out.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>Convention & Leadership</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <p><strong>Revolutionary moment:</strong> The Reconstruction Act of 1867 transformed S.C. politics. Black men could vote while many former Confederates could not. Result: 76 of 124 convention delegates were African American.</p>
+            
+            <h3>Key Leaders</h3>
+            <ul>
+              <li><strong>Robert Smalls:</strong> Born enslaved in Beaufort. Commandeered Confederate ship <em>Planter</em> in 1862, delivered to Union. By 1868, Republican delegate advocating for education and civil rights. Served 5 terms in Congress.</li>
+              <li><strong>Joseph Rainey:</strong> Georgetown barber who fled to Bermuda during war. Returned to help write constitution. First African American U.S. Representative from South Carolina.</li>
+              <li><strong>Francis Cardozo:</strong> Free-born Charleston, educated at University of Glasgow. As Secretary of State and State Treasurer, fought corruption and established financial accountability.</li>
+            </ul>
+            
+            <p><strong>Quote from William Beverly Nash (delegate):</strong> <em>"We are ready because we have been preparing all our lives. Who knows better than the slave what freedom means?"</em></p>
+            
+            <p class="inline-note">Note: Tensions existed between Black delegates, white Republicans ("scalawags"), and Northern Republicans ("carpetbaggers") over pace of reform.</p>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>What's New in the 1868 S.C. Constitution?</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <h3>Public Education (Article X)</h3>
+            <ul>
+              <li>First time S.C. took responsibility for educating all children</li>
+              <li>Mandated "uniform system of free public schools"</li>
+              <li>By 1870: 900 schools serving 50,000 Black children (up from zero in 1865)</li>
+            </ul>
+            
+            <h3>Universal Male Suffrage</h3>
+            <ul>
+              <li>Eliminated all property requirements for voting/officeholding</li>
+              <li>Any male citizen 21+ could vote, regardless of race or wealth</li>
+              <li>Expanded electorate from ~45,000 to over 140,000 voters</li>
+            </ul>
+            
+            <h3>Civil Rights Protections (Article I)</h3>
+            <p><em>"Distinction on account of race or color, in any case whatever, shall be prohibited, and all classes of citizens shall enjoy equally all common, public, legal and political privileges."</em></p>
+            
+            <h3>Representation Changes</h3>
+            <ul>
+              <li>Districts redrawn by population, not wealth</li>
+              <li>Power shifted from lowcountry planters to upcountry and Black-majority areas</li>
+              <li>By 1870: African Americans held 85 of 157 legislative seats</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Primary Source Insight</span><h2>Debate: Education Clause</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Problem:</strong> Wartime/destruction left few schools; who should pay?</li>
+            <li><strong>Proposal:</strong> Tax-funded, state-run system to reach rural communities.</li>
+            <li><strong>Opposition:</strong> Cost and control; fears of educating formerly enslaved people.</li>
+            <li><strong>Outcome:</strong> Education becomes a state responsibility for the first time.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Primary Source Insight</span><h2>Debate: Suffrage & Civil Rights</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Argument for suffrage:</strong> Citizenship demands the ballot; protection from local abuse.</li>
+            <li><strong>Counter-claims:</strong> Claims about "readiness" and property; racialized fears.</li>
+            <li><strong>Civil rights:</strong> Contracts, testimony in court, and equal protection contested then affirmed.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Spotlight</span><h2>Leaders & Firsts</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Robert Smalls:</strong> Civil War hero; later state & U.S. representative; advocate for equal rights.</li>
+            <li><strong>Joseph Rainey:</strong> First Black member of the U.S. House from S.C.; supported civil rights legislation.</li>
+            <li><strong>Francis Cardozo:</strong> State treasurer and educator; helped build the school system.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Guided Practice</span><h2>Read the Debates</h2></header>
+        <div class="content">
+          <div class="grid-2">
+            <div>
+              <h3>Excerpts to annotate</h3>
+              <ul>
+                <li>Public education clause</li>
+                <li>Voting rights / universal male suffrage</li>
+                <li>Civil rights protections</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Guiding questions</h3>
+              <ul>
+                <li>What problem is each clause trying to solve?</li>
+                <li>Who benefits – and who may resist?</li>
+                <li>What language shows continuity vs. change?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Student Activity</span><h2>Mock Constitutional Convention</h2></header>
+        <div class="content">
+          <ul>
+            <li>Assume delegate roles; review your role's priorities.</li>
+            <li>Debate: public education · voting rights · civil rights · property rights.</li>
+            <li>Vote and compare with the actual 1868 outcomes.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 2" data-role="exit">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Exit Ticket</span><h2>What surprised you?</h2></header>
+        <div class="content">
+          <p>What was most surprising about the political participation you examined today? Use an example from a debate, leader, or vote.</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 2</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+
+    <!-- ======================== DAY 3 ======================== -->
+    <section class="slide" data-lesson="Day 3" data-role="title">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Day 3</span><h2>Building Communities – Education & Economic Life (1865–1875)</h2></header>
+        <div class="content">
+          <p class="muted">Essential Question: <strong>How did African Americans build educational and economic institutions despite limited resources?</strong></p>
+          <p><span class="pill">Focus</span> Schools (Penn School, Avery Institute) • Sharecropping • Northern teachers & Southern communities</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3" data-role="agenda">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Agenda</span><h2>Today's Plan</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Do Now:</strong> Gallery walk – photographs of Reconstruction schools.</li>
+            <li><strong>Direct Instruction:</strong> Educational initiatives; how sharecropping worked.</li>
+            <li><strong>Guided Practice:</strong> Station rotation – Forten journal • sharecrop math • Black Codes vs. 1868 provisions.</li>
+            <li><strong>Student Activity:</strong> Start a digital timeline of educational & economic milestones.</li>
+            <li><strong>Exit Ticket:</strong> Most effective strategies for overcoming economic obstacles?</li>
+            <li><strong>Homework:</strong> Add ≥5 timeline events with evidence.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>Schools & Sharecropping</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <p><strong>Charlotte Forten (1862):</strong> <em>"It is wonderful how a people who have been so long crushed to the earth...can have so great a desire for knowledge."</em></p>
+            
+            <h3>Educational Institutions by 1870</h3>
+            <ul>
+              <li><strong>Penn School (St. Helena Island):</strong> Founded 1862, model for freedpeople's education</li>
+              <li><strong>Avery Institute (Charleston):</strong> Classical education including Latin and Greek</li>
+              <li><strong>Claflin University (Orangeburg):</strong> One of first colleges for African Americans in state</li>
+            </ul>
+            
+            <h3>Community-Driven Education</h3>
+            <ul>
+              <li>Adults attended night schools after working all day</li>
+              <li>Families pooled $1-2/month for teachers and church rentals</li>
+              <li>Bureau report: "Freedpeople are building schoolhouses with their own hands, buying books with money earned by extra labor"</li>
+            </ul>
+            
+            <h3>Sharecropping Economics (Example)</h3>
+            <ul>
+              <li>Average family: 20-30 acres cotton</li>
+              <li>Good year: 10 bales @ $50 = $500 gross</li>
+              <li>Landowner's 50% = $250</li>
+              <li>Family's share = $250</li>
+              <li>Minus: seed/tools ($40) + supplies/credit ($150) + interest (25%) = $230 expenses</li>
+              <li><strong>Net income: $20 for entire year</strong></li>
+            </ul>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Deep Dive</span><h2>Inside a Reconstruction Classroom</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Teachers:</strong> Northern missionaries and local Black teachers partnered with communities.</li>
+            <li><strong>Conditions:</strong> Crowded rooms, scarce books; classes in churches and homes.</li>
+            <li><strong>Community:</strong> Parents pooled funds; night schools for adults; high attendance despite distance.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Worked Example</span><h2>Sharecropping Ledger Math</h2></header>
+        <div class="content">
+          <p class="muted">Example: 1,000 lbs cotton at $0.12/lb = $120 gross</p>
+          <ul>
+            <li>Landowner takes <strong>1/2 share</strong> → $60 to landowner, $60 to family.</li>
+            <li>Deduct seed & tools ($18) + store credit with interest ($12) from family share.</li>
+            <li><strong>Net to family:</strong> $60 − $30 = <strong>$30</strong> for the season.</li>
+            <li><em>Discussion:</em> How do debt and prices trap families in cycles?</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Geography</span><h2>Where Were the Schools?</h2></header>
+        <div class="content">
+          <ul>
+            <li>Early centers: <strong>Beaufort/Sea Islands</strong> (Penn School), <strong>Charleston</strong> (Avery Institute).</li>
+            <li>Rural expansion: Church-based classes in the Midlands and Upcountry.</li>
+            <li>Barriers: Distance, funding, and threats against teachers and students.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Key Terms</span><h2>Know the Language</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Tuition schools</strong> – Community-funded classes before full state systems matured.</li>
+            <li><strong>Peonage/debt cycle</strong> – Owing the store/landowner keeps families tied to land.</li>
+            <li><strong>Aid societies</strong> – Northern groups that financed teachers and materials.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Guided Practice</span><h2>Rotation Stations (10 mins each)</h2></header>
+        <div class="content">
+          <div class="grid-2">
+            <div>
+              <h3>Station 1 – Charlotte Forten Grimké</h3>
+              <p class="quote">Use excerpts from her teaching journal to identify challenges and successes in early freedpeople's schools.</p>
+              <h3>Station 2 – Sharecrop Math</h3>
+              <p class="quote">Examine a sharecropping contract; estimate net earnings after seed, tools, and interest.</p>
+            </div>
+            <div>
+              <h3>Station 3 – Law & Policy</h3>
+              <p class="quote">Compare S.C. Black Codes with the 1868 Constitution's education and rights provisions.</p>
+              <p class="inline-note">Complete the graphic organizer at each station.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Student Activity</span><h2>Build the Timeline</h2></header>
+        <div class="content">
+          <ul>
+            <li>Create a digital timeline of education & economic milestones (1865–1875).</li>
+            <li>Include at least one <em>primary source excerpt or image</em> for each event.</li>
+            <li>Tag each event: Education • Labor • Law • Community.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 3" data-role="exit">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Exit Ticket</span><h2>Overcoming Obstacles</h2></header>
+        <div class="content">
+          <p>What strategies did African Americans use to overcome economic obstacles? Name one example from a source and explain why it mattered.</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 3</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+
+    <!-- ======================== DAY 4 ======================== -->
+    <section class="slide" data-lesson="Day 4" data-role="title">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Day 4</span><h2>Resistance & Terror – The Fight for Civil Rights (1868–1876)</h2></header>
+        <div class="content">
+          <p class="muted">Essential Question: <strong>How did African Americans resist violence and terrorism during Reconstruction?</strong></p>
+          <p><span class="pill">Focus</span> KKK violence & federal response • Enforcement Acts • Testimonies (e.g., Elias Hill)</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4" data-role="agenda">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Agenda</span><h2>Today's Plan</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Do Now:</strong> Content norms; quick-read of Elias Hill's testimony – initial reactions.</li>
+            <li><strong>Direct Instruction:</strong> Rise of Klan violence; Congress investigates; Enforcement Acts; martial law counties in S.C.</li>
+            <li><strong>Guided Practice:</strong> Prep for Socratic seminar using multiple testimonies + Grant's proclamation.</li>
+            <li><strong>Student Activity:</strong> Socratic Seminar – <em>How should the federal government respond?</em></li>
+            <li><strong>Exit Ticket:</strong> Which form of resistance was most effective? Why?</li>
+            <li><strong>Homework:</strong> Read Hamburg Massacre & the 1877 compromise context.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>Violence, Investigation, Intervention</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <p><strong>Context:</strong> By 1868, the Ku Klux Klan (founded Tennessee 1866) established chapters throughout S.C.'s upcountry.</p>
+            
+            <h3>Pattern of Terror</h3>
+            <ul>
+              <li><strong>Timing:</strong> Attacks increased before elections</li>
+              <li><strong>Targets:</strong> Black officeholders, teachers, ministers, voting advocates</li>
+              <li><strong>Methods:</strong> Night raids, whippings, shootings, lynchings</li>
+              <li><strong>Scale:</strong> York County alone - 11 murders, 600 whippings in 6 months</li>
+            </ul>
+            
+            <h3>Elias Hill's Testimony (1871)</h3>
+            <p>Hill, disabled Black minister in York County, dragged from cabin, beaten, threatened with death for preaching about voting rights. His crime: Teaching that Constitution guaranteed equal rights.</p>
+            
+            <h3>Congressional Response</h3>
+            <ul>
+              <li>Joint Select Committee collected 12 volumes of testimony</li>
+              <li>Harriet Simril testified Klansmen killed her husband for voting Republican: "This is what happens to radicals"</li>
+              <li>Investigation revealed organized political terrorism led by prominent citizens—doctors, lawyers, planters</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Primary Source Insight</span><h2>Elias Hill's Testimony</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Targets:</strong> Black leaders, teachers, officeholders, and voters.</li>
+            <li><strong>Methods:</strong> Night raids, beatings, threats to stop voting or teaching.</li>
+            <li><strong>Purpose:</strong> Break political participation and restore white supremacist control.</li>
+            <li><strong>Evidence skill:</strong> Identify who acted, what they demanded, and how victims responded.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>Enforcement Acts & Federal Power</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <h3>Three Enforcement Acts (1870-1871)</h3>
+            <ul>
+              <li>Made it federal crime to interfere with voting rights</li>
+              <li>Criminalized conspiracies to deprive constitutional rights</li>
+              <li>Allowed going in disguise to intimidate voters to be prosecuted</li>
+            </ul>
+            
+            <h3>Grant's Unprecedented Action</h3>
+            <ul>
+              <li>October 1871: Suspended habeas corpus in 9 S.C. counties</li>
+              <li>Only peacetime suspension in American history</li>
+              <li>Federal troops arrested 500+ Klansmen</li>
+              <li>U.S. Attorney David Corbin prosecuted in federal court</li>
+              <li>Violence decreased dramatically in 1872</li>
+            </ul>
+            
+            <h3>Obstacles to Enforcement</h3>
+            <ul>
+              <li><strong>Limited resources:</strong> Only 1,100 federal troops for all S.C.</li>
+              <li><strong>Legal challenges:</strong> Defense argued federal overreach</li>
+              <li><strong>Northern fatigue:</strong> By 1874, public opinion shifted</li>
+              <li><strong>Local resistance:</strong> White juries rarely convicted</li>
+            </ul>
+            
+            <p><strong>Critical ruling:</strong> U.S. v. Cruikshank (1876) - Federal government could only prosecute state actors, not individuals. This ended federal protection until 1960s.</p>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Case Study</span><h2>South Carolina Hotspots</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Upcountry counties</strong> saw concentrated night-rider activity.</li>
+            <li><strong>Arrests & trials</strong> disrupted networks but faced backlash.</li>
+            <li><strong>Local resistance:</strong> Mutual protection, testimony collection, appeals to federal authorities.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Discussion Framing</span><h2>How Should the Federal Government Respond?</h2></header>
+        <div class="content">
+          <ul>
+            <li>What <em>evidence</em> proves the need for intervention?</li>
+            <li>Which actions protect voters in the short term vs. long term?</li>
+            <li>What are the risks of relying on local enforcement alone?</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Guided Practice</span><h2>Socratic Prep</h2></header>
+        <div class="content">
+          <div class="grid-2">
+            <div>
+              <h3>Documents</h3>
+              <ul>
+                <li>Testimony: Elias Hill (Congressional hearing)</li>
+                <li>Additional testimonies for corroboration</li>
+                <li>Grant's martial law proclamation</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Build your case</h3>
+              <ul>
+                <li>Evidence of violence (who, where, how).</li>
+                <li>Constitutional principles at stake.</li>
+                <li>Recommended federal response & expected outcomes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 4" data-role="exit">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Exit Ticket</span><h2>Most Effective Resistance?</h2></header>
+        <div class="content">
+          <p>What forms of resistance to terrorism were most effective in protecting civil rights during Reconstruction? Support with a source.</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 4</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+
+    <!-- ======================== DAY 5 ======================== -->
+    <section class="slide" data-lesson="Day 5" data-role="title">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Day 5</span><h2>The End of Reconstruction & Its Legacy (1876–1877 & Beyond)</h2></header>
+        <div class="content">
+          <p class="muted">Essential Question: <strong>What were the immediate and long‑term consequences of Reconstruction's end?</strong></p>
+          <p><span class="pill">Focus</span> 1876 election & Compromise of 1877 • Loss of officeholding • 1895 Constitution & disenfranchisement • Robert Smalls' warning</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5" data-role="agenda">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Agenda</span><h2>Today's Plan</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Do Now:</strong> Timeline review – predict effects of federal troop withdrawal.</li>
+            <li><strong>Direct Instruction:</strong> Compromise of 1877; the rapid decline of Black officeholding.</li>
+            <li><strong>Guided Practice:</strong> Read Robert Smalls' 1895 speech; compare 1868 vs. 1895 constitutions.</li>
+            <li><strong>Student Activity:</strong> Start your summative assessment (DBQ outline, argument plan, or creative project storyboard).</li>
+            <li><strong>Exit Ticket:</strong> Which gains endured and which were reversed?</li>
+            <li><strong>Homework:</strong> Complete the summative project (due in 3 days).</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>Compromise, Retrenchment, Disenfranchisement</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <h3>The Compromise of 1877</h3>
+            <p>Disputed 1876 election: Democrat Tilden won popular vote, 20 electoral votes contested (including S.C.)</p>
+            <ul>
+              <li>Deal: Republican Hayes becomes president</li>
+              <li>Federal troops withdraw from Southern states</li>
+              <li>Democrats ("Redeemers") regain control of S.C.</li>
+            </ul>
+            
+            <h3>Wade Hampton's False Promise</h3>
+            <p>Confederate general turned governor promised to respect Black rights, but implemented "Mississippi Plan":</p>
+            <ul>
+              <li><strong>Economic pressure:</strong> Fire Black workers who vote Republican</li>
+              <li><strong>Rifle clubs:</strong> Paramilitary intimidation</li>
+              <li><strong>Fraud:</strong> Ballot stuffing, discarded Republican votes</li>
+            </ul>
+            
+            <h3>Rapid Decline</h3>
+            <ul>
+              <li>1870: 85 African Americans in state legislature</li>
+              <li>1878: Only 3 remain</li>
+              <li>1877: Federal troops leave</li>
+              <li>1878: Democrats control all state offices</li>
+              <li>1882: Eight-box law makes voting nearly impossible</li>
+              <li>1890s: Lynchings average one per month</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>What Changed After 1877?</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <h3>Political Reversals</h3>
+            <ul>
+              <li>Black officeholding: 300+ officials (1870) → fewer than 10 (1890)</li>
+              <li>One-party Democratic rule until 1960s</li>
+              <li>Local offices purged of Black members</li>
+            </ul>
+            
+            <h3>Educational Decline</h3>
+            <ul>
+              <li>Black school funding cut 75%</li>
+              <li>Teacher salaries: White $35/month, Black $15/month</li>
+              <li>Black illiteracy rose from 30% (1880) to 52% (1900)</li>
+            </ul>
+            
+            <h3>Economic & Social Control</h3>
+            <ul>
+              <li>Sharecropping expanded, debt cycles deepened</li>
+              <li>Convict lease system re-enslaved thousands</li>
+              <li>Black land ownership peaked 14% (1890), then declined</li>
+              <li>Lynchings became public spectacles</li>
+              <li>"Whitecapping" drove successful Black farmers away</li>
+            </ul>
+            
+            <h3>Resistance Continues</h3>
+            <ul>
+              <li>Churches: centers of community organization</li>
+              <li>Mutual aid societies: insurance and loans</li>
+              <li>Secret political meetings despite risks</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Direct Instruction</span><h2>1895 Constitution: How Voting Was Curtailed</h2></header>
+        <div class="content">
+          <div class="lecture-text">
+            <p><strong>Governor "Pitchfork" Ben Tillman's goal:</strong> Legally disenfranchise Black voters without mentioning race (to avoid violating 15th Amendment)</p>
+            
+            <h3>The Obstacle Course</h3>
+            <ol>
+              <li><strong>Residence:</strong> 2 years state, 1 year county, 4 months precinct</li>
+              <li><strong>Poll tax:</strong> $1 annually ($35 today), paid 6 months before election</li>
+              <li><strong>Literacy test OR understanding clause:</strong> Read/write Constitution OR explain when read aloud</li>
+              <li><strong>Property alternative:</strong> Own $300 property (instead of literacy)</li>
+            </ol>
+            
+            <p><strong>The Trap:</strong> "Understanding clause" gave registrars complete discretion. White illiterates "understood" simple passages; educated Blacks failed complex sections.</p>
+            
+            <h3>Robert Smalls' Warning</h3>
+            <p>Only Black delegate at 1895 convention: <em>"You are disenfranchising your own people as well as mine. Poor whites will suffer alongside freedmen."</em></p>
+            
+            <h3>Devastating Results</h3>
+            <ul>
+              <li>1896: 130,000 Black voters</li>
+              <li>1898: 15,000 Black voters</li>
+              <li>1940: 3,000 Black voters (<1% of eligible)</li>
+            </ul>
+            
+            <p><strong>Smalls' final words:</strong> <em>"This convention has been called to disenfranchise the Negro and commit a great wrong. Time will right this injustice."</em></p>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Primary Source Insight</span><h2>Robert Smalls on Rights (1895)</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Warning:</strong> Denying the ballot breaks the promises of Reconstruction.</li>
+            <li><strong>Appeal:</strong> Protect equal citizenship under the law.</li>
+            <li><strong>Use in class:</strong> Compare his claims to the new constitution's text.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Synthesis</span><h2>Continuities & Legacies</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>Institutions:</strong> Black churches, mutual-aid societies, and schools persisted.</li>
+            <li><strong>Memory:</strong> Competing narratives of Reconstruction shaped policy for decades.</li>
+            <li><strong>Connection:</strong> Struggles over voting and education reverberate into the 20th century and beyond.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Guided Practice</span><h2>Read, Compare, Explain</h2></header>
+        <div class="content">
+          <div class="grid-2">
+            <div>
+              <h3>Text Study</h3>
+              <ul>
+                <li>Robert Smalls' 1895 warning speech – annotate claims & evidence.</li>
+                <li>Compare <em>1868</em> vs. <em>1895</em> S.C. constitutions for voting & education language.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Identify Disenfranchisement</h3>
+              <ul>
+                <li>Which clauses effectively block voting?</li>
+                <li>How do they contrast with 1868's promises?</li>
+                <li>What are the likely impacts on representation?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Student Activity</span><h2>Begin the Summative</h2></header>
+        <div class="content">
+          <ul>
+            <li><strong>DBQ Option:</strong> Draft thesis + 2 body paragraph topic sentences with evidence notes.</li>
+            <li><strong>Argument Presentation:</strong> Claim, 3 supports, 1 counterargument, primary-source exhibits.</li>
+            <li><strong>Creative Project:</strong> Storyboard historical diary entries from multiple perspectives.</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+    <section class="slide" data-lesson="Day 5" data-role="exit">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Exit Ticket</span><h2>What Endured? What Was Lost?</h2></header>
+        <div class="content">
+          <p>Which Reconstruction gains endured in South Carolina, and which were reversed after 1877? Name one primary source that supports your judgment.</p>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Day 5</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Next ▶</button></div></footer>
+      </div>
+    </section>
+
+
+    <!-- ======================== CREDITS ======================== -->
+    <section class="slide" data-lesson="Unit" data-role="credits">
+      <div class="card">
+        <header class="head"><span class="eyebrow">Credits</span><h2>Primary Sources & Tools</h2></header>
+        <div class="content">
+          <ul>
+            <li>Proceedings of the South Carolina Constitutional Convention (1868) – education, suffrage, civil rights.</li>
+            <li>Freedmen's Bureau records – labor contracts, school reports, marriage certificates.</li>
+            <li>Charlotte Forten Grimké – teaching journals & Atlantic Monthly writing.</li>
+            <li>Joint Select Committee Report (1872) – testimonies on KKK violence (e.g., Elias Hill).</li>
+            <li>Speeches of Robert Smalls – including 1895 warnings on voting rights.</li>
+            <li>African American newspapers (e.g., Charleston <em>South Carolina Leader</em>).</li>
+            <li>Primary Source Analysis Tool (Sourcing, Context, Content, Corroboration, Close Reading, Significance).</li>
+          </ul>
+        </div>
+        <footer class="foot"><div class="progress"><div class="badge">Unit</div><div class="progressbar"><span></span></div><div id="counter"></div></div><div class="nav"><button class="secondary">◀</button><button>Restart ▶</button></div></footer>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    (function(){
+      const slides=[...document.querySelectorAll('.slide')];
+      const nextBtns=[...document.querySelectorAll('.nav button:not(.secondary)')];
+      const prevBtns=[...document.querySelectorAll('.nav button.secondary')];
+      const bar=[...document.querySelectorAll('.progressbar>span')];
+      const counters=[...document.querySelectorAll('#counter')];
+      let i=0;
+
+      function show(idx){
+        if(idx<0) idx=0; if(idx>slides.length-1) idx=slides.length-1; i=idx;
+        slides.forEach((s,j)=>s.classList.toggle('visible', j===i));
+        const pct=Math.round(((i+1)/slides.length)*100)+'%';
+        bar.forEach(el=>el.style.setProperty('--w',pct));
+        counters.forEach(el=>el.textContent=`Slide ${i+1} of ${slides.length}`);
+      }
+
+      function next(){ show(i+1>=slides.length? 0 : i+1); }
+      function prev(){ show(i-1<0? slides.length-1 : i-1); }
+
+      nextBtns.forEach(b=>b.addEventListener('click', next));
+      prevBtns.forEach(b=>b.addEventListener('click', prev));
+
+      document.addEventListener('keydown', (e)=>{
+        if(['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); next(); }
+        if(['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); prev(); }
+        if(e.key==='Home'){ show(0); }
+        if(e.key==='End'){ show(slides.length-1); }
+      });
+
+      // Click on slide advances; click while holding Shift goes back
+      document.getElementById('deck').addEventListener('click', (e)=>{
+        const tag=e.target.tagName.toLowerCase();
+        if(['a','button','input','textarea','select','label'].includes(tag)) return;
+        if(e.shiftKey) prev(); else next();
+      });
+
+      // Initialize
+      show(0);
+    })();
+  </script>
+</body>
+</html>
